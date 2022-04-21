@@ -17,7 +17,7 @@ metadata:
   name: nodejs
   namespace: flux-system
 spec:
-  interval: 5m0s
+  interval: 10m0s
   path: ./
   prune: true
   sourceRef:

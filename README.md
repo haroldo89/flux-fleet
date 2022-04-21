@@ -4,14 +4,17 @@ flux demo
 # Install Flux CLI by following the instructions from https://toolkit.fluxcd.io/guides/installation/#install-the-flux-cli
 
 variables de entorno 
-# Replace `[...]` with the GitHub token
+Replace `[...]` with the GitHub token
 export GITHUB_TOKEN=[...]
-# Replace `[...]` with the GitHub organization or a GitHub user if it is a personal account
+Replace `[...]` with the GitHub organization or a GitHub user if it is a personal account
 export GITHUB_USER=[...]
-# Replace `[...]` with the GitHub organization or a GitHub user if it is a personal account
+Replace `[...]` with the GitHub organization or a GitHub user if it is a personal account
 export GITHUB_ORG=[...]
-# Replace `[...]` with `true` if it is a personal account, or with `false` if it is an GitHub organization
+Replace `[...]` with `true` if it is a personal account, or with `false` if it is an GitHub organization
 export GITHUB_PERSONAL=[...]
+
+
+```bash
 
 cd flux-fleet
 
@@ -79,3 +82,5 @@ flux create helmrelease \
     --interval 30s \
     --export \
     | tee -a ../flux-fleet/apps/devops-toolkit.yaml
+
+```

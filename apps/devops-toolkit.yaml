@@ -35,6 +35,13 @@ spec:
       port: 80
       targetPort: 80
       type: NodePort
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
 
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
@@ -61,4 +68,11 @@ spec:
       port: 80
       targetPort: 3000
       type: NodePort
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
 
