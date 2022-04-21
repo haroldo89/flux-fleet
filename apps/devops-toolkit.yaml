@@ -28,7 +28,7 @@ spec:
   values:
     image:
       repository: haroldo89/front-app
-      tag: "69"
+      tag: "67"
     replicaCount: 1
     service:
       nodePort: 32200
