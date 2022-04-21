@@ -59,6 +59,6 @@ spec:
     service:
       nodePort: 32300
       port: 80
-      targetPort: 80
+      targetPort: 3000
       type: NodePort
 
