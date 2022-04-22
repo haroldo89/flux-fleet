@@ -2,18 +2,36 @@ flux demo GitOps
 
 Install Flux CLI by following the instructions from https://toolkit.fluxcd.io/guides/installation/#install-the-flux-cli
 
-variables de entorno \n
-Replace `[...]` with the GitHub token \n
-export GITHUB_TOKEN=[...] \n
-Replace `[...]` with the GitHub organization or a GitHub user if it is a personal account \n
-export GITHUB_USER=[...] \n
-Replace `[...]` with the GitHub organization or a GitHub user if it is a personal account \n
-export GITHUB_ORG=[...] \n
-Replace `[...]` with `true` if it is a personal account, or with `false` if it is an GitHub organization \n
-export GITHUB_PERSONAL=[...] \n
+Variables de entorno
+
+Replace `[...]` with the GitHub token
+
+export GITHUB_TOKEN=[...]
+
+Replace `[...]` with the GitHub organization or a GitHub user if it is a personal account
+
+export GITHUB_USER=[...]
+
+Replace `[...]` with the GitHub organization or a GitHub user if it is a personal account
+
+export GITHUB_ORG=[...]
+
+Replace `[...]` with `true` if it is a personal account, or with `false` if it is an GitHub organization
+
+export GITHUB_PERSONAL=[...]
 
 
 ```bash
+
+Install Flux onto your cluster
+Run the bootstrap command:
+
+flux bootstrap github \
+  --owner=$GITHUB_ORG \
+  --repository=flux-fleet \
+  --branch=main \
+  --path=./apps \
+  --personal
 
 cd flux-fleet
 
