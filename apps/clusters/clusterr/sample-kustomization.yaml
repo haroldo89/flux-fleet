@@ -4,8 +4,8 @@ metadata:
   name: sample-clusterr
   namespace: flux-system
 spec:
-  interval: 5m0s
-  path: ./../../sample
+  interval: 2m0s
+  path: ./../../apps/sample
   prune: true
   sourceRef:
     kind: GitRepository
